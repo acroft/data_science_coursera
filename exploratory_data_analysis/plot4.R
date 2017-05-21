@@ -13,7 +13,7 @@ hpc <- hpc[hpc$Date==as.Date("01/02/2007", format="%d/%m/%Y")
            | hpc$Date==as.Date("02/02/2007", format="%d/%m/%Y"),]
 hpc$DateTime <- strptime(paste(hpc$Date, hpc$Time), format='%F %H:%M:%S')
 
-png(filename='plot4.png')
+png(width=960, height=960, filename='plot4.png')
 par(mfcol=c(2,2))
 
 # plot 1
